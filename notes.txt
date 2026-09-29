@@ -1,0 +1,6 @@
+commmands node 
+npm unit // package.json 
+node server.js // to turn on the server 
+npm install express // to install express
+node_modules  // where installed package live 
+npm run <script> // runs a custom script defined in package.json, e.g. npm run start 
