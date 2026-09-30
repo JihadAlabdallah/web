@@ -1,88 +1,73 @@
-<div style="background:white; border-radius:12px; overflow:hidden; font-family:var(--font-sans);">
-    <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 20px; border-bottom:0.5px solid var(--border);">
-      <p style="font-weight:500; font-size:20px; color:#0FC2D4; margin:0;">
-        NOOK
-      </p>
-  
-      <div style="display:flex; gap:20px; font-size:13px; color:var(--text-secondary);">
-        <span>Book</span>
-        <span>Dine</span>
-        <span>Explore</span>
-        <span>List your place</span>
-      </div>
-  
-      <button style="background:#0FC2D4; color:white; border:none; padding:7px 16px; border-radius:20px; font-size:13px; font-weight:500;">
-        Get the app
-      </button>
-    </div>
-  
-    <div style="background:linear-gradient(180deg,#E6FBFD 0%, #FFFFFF 100%); padding:2.5rem 2rem 2rem; text-align:center;">
-      <h1 style="font-size:30px; font-weight:500; color:#0A2E33; margin:0 0 10px;">
-        Book your escape.
-      </h1>
-  
-      <p style="font-size:15px; color:#4A6C70; margin:0 0 22px;">
-        Guest houses, restaurants and things to do all in one nook.
-      </p>
-  
-      <div style="display:flex; gap:8px; max-width:420px; margin:0 auto; background:white; border-radius:24px; padding:6px 6px 6px 16px; border:1.5px solid #0FC2D4;">
-        <input
-          type="text"
-          placeholder="Search a location or stay"
-          style="flex:1; border:none; font-size:14px;"
-        />
-  
-        <button style="background:#0FC2D4; color:white; border:none; padding:0 18px; border-radius:20px; font-size:13px; font-weight:500;">
-          Search
-        </button>
-      </div>
-    </div>
-  
-    <div style="padding:1.5rem;">
-      <p style="font-size:13px; font-weight:500; color:var(--text-secondary); margin:0 0 10px;">
-        Popular destinations
-      </p>
-  
-      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
-        <div style="border-radius:10px; overflow:hidden; border:0.5px solid var(--border);">
-          <div style="height:70px; background:#BFE8EC;"></div>
-  
-          <p style="font-size:12px; font-weight:500; margin:6px 8px;">
-            Kfarmatta
-          </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nook – Book your escape</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <a href="#" class="logo">NOOK</a>
+
+      <nav class="nav">
+        <a href="#" class="nav__link">Book</a>
+        <a href="#" class="nav__link">Dine</a>
+        <a href="#" class="nav__link">Explore</a>
+        <a href="#" class="nav__link">List your place</a>
+      </nav>
+
+      <button class="btn btn--primary btn--small" type="button">Get the app</button>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="hero__title">Book your escape.</h1>
+        <p class="hero__subtitle">Guest houses, restaurants and things to do all in one nook.</p>
+
+        <div class="search">
+          <input class="search__input" type="text" placeholder="Search a location or stay">
+          <button class="btn btn--primary btn--pill" type="button">Search</button>
         </div>
-  
-        <div style="border-radius:10px; overflow:hidden; border:0.5px solid var(--border);">
-          <div style="height:70px; background:#A8D8DC;"></div>
-  
-          <p style="font-size:12px; font-weight:500; margin:6px 8px;">
-            Baisour
-          </p>
+      </section>
+
+      <!-- Popular destinations -->
+      <section class="destinations">
+        <h2 class="destinations__title">Popular destinations</h2>
+
+        <div class="destinations__grid">
+          <article class="card">
+            <div class="card__image card__image--1"></div>
+            <p class="card__name">Kfarmatta</p>
+          </article>
+
+          <article class="card">
+            <div class="card__image card__image--2"></div>
+            <p class="card__name">Baisour</p>
+          </article>
+
+          <article class="card">
+            <div class="card__image card__image--3"></div>
+            <p class="card__name">Aley</p>
+          </article>
         </div>
-  
-        <div style="border-radius:10px; overflow:hidden; border:0.5px solid var(--border);">
-          <div style="height:70px; background:#CDEEF1;"></div>
-  
-          <p style="font-size:12px; font-weight:500; margin:6px 8px;">
-            Aley
-          </p>
-        </div>
+      </section>
+    </main>
+
+    <!-- App banner -->
+    <footer class="app-banner">
+      <p class="app-banner__text">Nook lives in your pocket</p>
+
+      <div class="app-banner__stores">
+        <a href="#" class="store-badge">App Store</a>
+        <a href="#" class="store-badge">Google Play</a>
       </div>
-    </div>
-  
-    <div style="background:#0FC2D4; padding:1.5rem; text-align:center;">
-      <p style="color:white; font-weight:500; font-size:15px; margin:0 0 10px;">
-        Nook lives in your pocket
-      </p>
-  
-      <div style="display:flex; gap:8px; justify-content:center;">
-        <span style="background:white; color:#0A2E33; font-size:12px; padding:8px 16px; border-radius:8px; font-weight:500;">
-          App Store
-        </span>
-  
-        <span style="background:white; color:#0A2E33; font-size:12px; padding:8px 16px; border-radius:8px; font-weight:500;">
-          Google Play
-        </span>
-      </div>
-    </div>
+    </footer>
+
   </div>
+</body>
+</html>

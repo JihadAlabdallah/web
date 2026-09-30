@@ -1,7 +1,7 @@
 const express = require('express'); 
 const app = express(); 
 app.use(express.json());
-//app.use(express.static('public'));
+app.use(express.static('public'));
 const useRoute = require('./route/users')
 app.use('/api',useRoute);
 
